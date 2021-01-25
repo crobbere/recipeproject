@@ -1,6 +1,6 @@
-package gipsy.springframework.repositories;
+package gipsy.springframework.recipeproject.repositories;
 
-import gipsy.springframework.domain.Recipe;
+import gipsy.springframework.recipeproject.domain.Recipe;
 import org.springframework.data.repository.CrudRepository;
 
 public interface RecipeRepository extends CrudRepository<Recipe, Long> {

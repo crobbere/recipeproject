@@ -1,12 +1,14 @@
-package gipsy.springframework.services;
+package gipsy.springframework.recipeproject.services;
 
-import gipsy.springframework.domain.Recipe;
-import gipsy.springframework.repositories.RecipeRepository;
+import gipsy.springframework.recipeproject.domain.Recipe;
+import gipsy.springframework.recipeproject.repositories.RecipeRepository;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
 import java.util.Set;
 
+@Slf4j
 @Service
 public class RecipeServiceImpl implements RecipeService{
 
@@ -18,8 +20,9 @@ public class RecipeServiceImpl implements RecipeService{
 
     @Override
     public Set<Recipe> getRecipes() {
-        Set<Recipe> recipeSet = new HashSet<>();
+        log.debug("I'm in the service");
 
+        Set<Recipe> recipeSet = new HashSet<>();
         recipeRepository.findAll().iterator().forEachRemaining(recipeSet::add);
         return recipeSet;
     }

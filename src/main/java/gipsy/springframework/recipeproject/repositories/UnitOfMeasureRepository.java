@@ -1,6 +1,6 @@
-package gipsy.springframework.repositories;
+package gipsy.springframework.recipeproject.repositories;
 
-import gipsy.springframework.domain.UnitOfMeasure;
+import gipsy.springframework.recipeproject.domain.UnitOfMeasure;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Component;
 

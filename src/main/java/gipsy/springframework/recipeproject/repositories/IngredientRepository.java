@@ -1,6 +1,6 @@
-package gipsy.springframework.repositories;
+package gipsy.springframework.recipeproject.repositories;
 
-import gipsy.springframework.domain.Ingredient;
+import gipsy.springframework.recipeproject.domain.Ingredient;
 import org.springframework.data.repository.CrudRepository;
 
 

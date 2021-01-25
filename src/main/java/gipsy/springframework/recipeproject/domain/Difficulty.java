@@ -1,4 +1,4 @@
-package gipsy.springframework.domain;
+package gipsy.springframework.recipeproject.domain;
 
 public enum Difficulty {
     EASY,
